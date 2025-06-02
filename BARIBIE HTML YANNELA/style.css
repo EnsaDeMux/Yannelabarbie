@@ -1,0 +1,119 @@
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes glitter {
+    0% { box-shadow: 0 0 5px #fff, 0 0 10px #ff69b4; }
+    50% { box-shadow: 0 0 15px #fff, 0 0 30px #ff69b4; }
+    100% { box-shadow: 0 0 5px #fff, 0 0 10px #ff69b4; }
+}
+
+body {
+    background: url('background.png') repeat center center fixed; background-size: cover;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #d60085;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ff1493;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #c71585;
+    font-size: 28px;
+}
+
+h3 {
+    color: #ff69b4;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.intro {
+    font-size: 18px;
+    color: #b1007e;
+    margin: 20px 10%;
+}
+
+ul {
+    list-style-type: heart;
+    font-weight: bold;
+    color: #ff1493;
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    margin: 15px;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.glitter img {
+    animation: glitter 2s infinite alternate;
+}
+
+.button-group {
+    margin: 20px;
+}
+
+.btn {
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+}
+
+.music-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+
+/* Neon text glow effect */
+body, h1, h2, h3, ul, p, .intro {
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #ff69b4,
+        0 0 15px #ff69b4,
+        0 0 20px #ff1493,
+        0 0 25px #ff1493;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p, .intro, ul {
+    font-size: 22px;
+}

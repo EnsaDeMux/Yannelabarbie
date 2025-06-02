@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundo de Barbie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="barbie_song.mp3" type="audio/mpeg">
+        Tu navegador no soporta música de fondo.
+    </audio>
+
+    <button onclick="toggleMusic()" class="btn music-btn">Pausar/Reproducir Música</button>
+
+    <h1>¡Bienvenida al Mundo de Barbie!</h1>
+    <img src="barbie1.png" alt="Logo Barbie" width="250">
+
+    <p class="intro">
+        Barbie es un personaje icónico que inspira a niñas y niños a imaginar, crear y soñar en grande.
+        Con una historia llena de moda, aventuras, amistad y valentía, Barbie ha sido símbolo de que puedes ser lo que quieras ser.
+    </p>
+
+    <h2>¿Qué encontrarás aquí?</h2>
+    <ul>
+        <li>Vestidos brillantes y llenos de estilo</li>
+        <li>Bailarinas mágicas con mucho ritmo</li>
+        <li>Amigos adorables y coloridos</li>
+    </ul>
+
+    <div class="button-group">
+        <a href="#bailarina" class="btn">Ver Bailarina</a>
+        <a href="#amigos" class="btn">Ver Amigos</a>
+    </div>
+
+    <div id="bailarina" class="glitter">
+        <img src="barbie2.png" alt="Barbie saludando" width="300">
+        <img src="barbie5.png" alt="Barbie bailarina" width="300">
+    </div>
+
+    <h3>¡La magia está en ser tú misma!</h3>
+
+    <div id="amigos" class="glitter">
+        <img src="barbie3.png" alt="Muñeca mágica gritando" width="250">
+        <img src="barbie4.png" alt="Muñeca mágica feliz" width="250">
+    </div>
+
+    <p>Gracias por visitar 💖 ¡Sigue soñando en rosa!</p>
+
+    <script>
+        function toggleMusic() {
+            var music = document.getElementById("bg-music");
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+</body>
+</html>
